@@ -37,12 +37,20 @@ int main(void)
 		switch(tecla)
 		{
 			case PRENDER:
+<<<<<<< HEAD
 				mask_on((void*) (&(portd.porta)) , ON, PORTA);
+=======
+				mask_on((void*) (&(portd.porta)) , ON);
+>>>>>>> 74a6a28d857b2a76e315e3f4547818942cfbb77a
 				break;
 		
 
 			case APAGAR:
+<<<<<<< HEAD
 				mask_off((void*) (&(portd.porta)) , ON, PORTA );
+=======
+				mask_off((void*) (&(portd.porta)) , ON );
+>>>>>>> 74a6a28d857b2a76e315e3f4547818942cfbb77a
 				break;
 
 			case PARPADEAR:

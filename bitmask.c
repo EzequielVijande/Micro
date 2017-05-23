@@ -82,6 +82,7 @@ void bit_toggle(void* port, int nbit)
 
 }
 
+<<<<<<< HEAD
 void mask_toggle(void* p_port, uint16_t mask, char port)
 {
 	if( (port==PORTA)||(port==PORTB) )
@@ -116,6 +117,21 @@ void mask_off(void* p_port, uint16_t mask, char port )
 	{
 		*((char*)p_port) &= (~mask);
 	}
+=======
+void mask_toggle(void* port, char mask)
+{
+	*((char*)port) ^= mask;  
+}
+
+void mask_on(void* port, char mask)
+{
+	*((char*)port)|= mask; 
+}
+
+void mask_off(void* port, char mask )
+{
+	*((char*)port) &= (~mask);
+>>>>>>> 74a6a28d857b2a76e315e3f4547818942cfbb77a
 }
 
 
